@@ -2,13 +2,13 @@
 function count(){
 var x = document.getElementById("wordCount").value;
 console.log(x);
-var a = 0;
-for (var i=0;i<x.length;i++){
-    if(x[i]==" "){
-        a=a+1;
-    }
+if(x.length!=0){
 
+
+var y = x.split(" ");
+console.log(y.length);
+
+
+document.getElementById("test").innerHTML=(y.length);
 }
-console.log(a);
-document.getElementById("test").innerHTML=(a+1);
 }
